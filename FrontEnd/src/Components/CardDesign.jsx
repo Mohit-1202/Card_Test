@@ -1,9 +1,10 @@
 import { useUser } from '../Context/UserContext';
+import ShimmerUi from './Shimmer';
 
 function CardDesign() {
-  const { user } = useUser(); // users: array of user objects
+  const { user } = useUser();
 
-  if (!user || user.length === 0) return <p>No users found</p>;
+  if (!user || user.length === 0) return <ShimmerUi/>;
 
   return (
     <div className='card-container flex flex-wrap justify-center'>
