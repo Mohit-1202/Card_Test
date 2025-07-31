@@ -18,7 +18,7 @@ function CardDesign() {
               <div className="user-image">
                 <img
                   className="w-30"
-                  src="https://dhoomindia.com/assets/user2.png"
+                  src={user.image}
                   alt="User"
                 />
               </div>
