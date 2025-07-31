@@ -10,7 +10,9 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/users/"); 
+        const BASE_URL = "https://card-test-18sp.onrender.com";
+
+        const res = await fetch(`${BASE_URL}/api/users/`); 
         const data = await res.json();
         setUser(data.users);
       } catch (err) {
